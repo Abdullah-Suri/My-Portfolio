@@ -1,7 +1,6 @@
 body {
-    background-image: linear-gradient(to right, #000000, #c0c1ca00), url('/Assets/images/maxresdefault.jpg');
+    background-image: linear-gradient(to right, #000000, #0000004f), url('/Assets/images/maxresdefault.jpg');
 }
-
 @font-face {
     font-family: 'alphakufiregular';
     src: url('../Fonts/alphakufiregular.ttf');
