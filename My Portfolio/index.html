@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Style css -->
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Font Awsesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- WoW Js  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="/Assets/Images/fav-icon-removebg-preview.png" type="image">
+    <title>Abdullah - Personal Portfolio</title>
+</head>
+
+<body>
+    <!-- Nav Menu  -->
+    <nav class="max-[1024px]:hidden">
+        <div class="flex justify-between m-10 ">
+            <div class="flex items-center wow animate__animated animate__fadeIn animate__slow 2s">
+                <p class=" text-[#f9004d] my-arabic-font font-medium tracking-[3px] text-2xl xl:text-5xl cursor-pointer ease-in duration-300"><a
+                        href="/index.html">Abd<span class="text-white">ull</span>ah</p></a>
+                <!-- <img src="/Assets/images/abdullah-logo.png" alt=""> -->
+            </div>
+
+            <div class="flex items-center">
+                <ul class="">
+                    <li
+                        class="inline-block my-primary-font mr-12 text-white text-[14px] xl:text-lg font-medium tracking-[2px] cursor-pointer hover:text-[#f9004d] ease-in duration-300 wow animate__animated animate__jackInTheBox">
+                        <a href="/index.html"> HOME</a>
+                    </li>
+
+                    <li
+                        class="inline-block mr-12 my-primary-font text-white text-[14px] xl:text-lg font-medium tracking-[2px] cursor-pointer hover:text-[#f9004d] ease-in duration-300 wow animate__animated animate__jackInTheBox">
+                        <a href="/about.html">ABOUT</a>
+                    </li>
+
+                    <li
+                        class="inline-block mr-12 my-primary-font text-white text-[14px] xl:text-lg font-medium tracking-[2px] cursor-pointer hover:text-[#f9004d] ease-in duration-300 wow animate__animated animate__jackInTheBox">
+                        <a href="/portfolio.html">PORTFOLIO</a>
+                    </li>
+
+                    <li
+                        class="inline-block mr-12 my-primary-font text-white text-[14px] xl:text-lg font-medium tracking-[2px] cursor-pointer hover:text-[#f9004d] ease-in duration-300 wow animate__animated animate__jackInTheBox">
+                        <a href="/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="wow animate__animated animate__fadeIn animate__slow 2s">
+                <a href="contact.html"
+                    class="bg-transparent rounded-full my-primary-font text-white font-base tracking-[2px] text-white  py-2 px-8 border-[2px] border-[#f9004d] hover:bg-[#f9004d] ease-in duration-150 ">SUBSCRIBE</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu Hamburger -->
+    <section>
+        <div class="min-[1025px]:hidden flex justify-between items-center w-full my-4 sm:px-6 px-3">
+            <div class="flex items-center wow animate__animated animate__fadeIn animate__slow 2s">
+                <p class=" text-[#f9004d] my-arabic-font font-medium tracking-[3px] text-[42px] cursor-pointer ease-in duration-300"><a
+                        href="/index.html">Abd<span class="text-white">ull</span>ah</p></a>
+                <!-- <img src="/Assets/images/abdullah-logo.png" alt=""> -->
+            </div>
+            <span class="mob-menu" onclick="openNav()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                    <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z" fill="rgba(255,255,255,1)"></path>
+                </svg>
+            </span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="my-primary-font" href="index.html">HOME</a>
+            <a class="my-primary-font" href="about.html">ABOUT Me</a>
+            <a class="my-primary-font" href="portfolio.html">PORTFOLIO</a>
+            <a class="my-primary-font" href="contact.html">CONTACT Me</a>
+        </div>
+    </section>
+
+    <!-- Hero Section  -->
+    <section class="container max-w-[1536px] mx-auto">
+        <div
+            class="2xl:my-[15rem] my-48 mx-8 ease-in duration-300 wow animate__animated animate__fadeIn animate__slow 3s">
+            <p class="text-white my-primary-font font-semibold sm:text-3xl text-xl"><span class="text-[#f9004d]">Hey!</span> My Name Is
+            </p>
+            <p class="text-white font-bold my-heading-font sm:text-6xl text-3xl sm:py-5 py-2">ABDULLAH <span
+                    class="text-[#f9004d]">SURI</span></p>
+            <p class="">
+            </p>
+            <span class="text-[#f9004d] my-primary-font font-semibold sm:text-3xl text-xl ">I'm a</span>
+            <span class="text-white my-primary-font font-semibold sm:text-3xl text-xl type-animate"></span>
+            <div
+                class="min-[1095px]:w-[30%] lg:w-[35%] min-[786px]:w-[45%] max-[509px]:w-[100%] min-[510px]:w-[70%] flex justify-between items-center bg-white rounded-full py-[9px] px-3 border-2 border-[#f9004d] my-4 ease-in duration-300">
+                <div>
+                    <input type="text" placeholder="Enter Your Email"
+                        class="xl:w-[170%] placeholder:text-[#858585] outline-0 text-[#858585] caret-[#f9004d]">
+                </div>
+
+                <div>
+                    <a href="contact.html"
+                        class="bg-[#f9004d] sm:normal-case lowercase px-5 py-2 rounded-full text-white text-sm drop-shadow-2xl xl:tracking-[2px]">
+                        LET's START
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section  -->
+    <section class="bg-[#131313] my-20">
+        <div class="flex justify-center flex-wrap items-center container max-w-[1536px] mx-auto py-20">
+
+            <div class="lg:w-[30%] sm:w-[40%] w-[55%] wow animate__animated animate__slideInUp">
+                <img src="/Assets/images/home-about.png" class="h-full rounded-xl opacity-50" alt="">
+            </div>
+
+            <div
+                class="sm:w-[50%] w-full 2xl:px-24 lg:px-12 sm:mt-0 mt-6 sm:pl-6 wow animate__animated animate__slideInUp">
+                <p class="text-white min-[1025px]:text-7xl sm:text-4xl text-6xl sm:text-left text-center font-bold my-heading-font">
+                    <span class="text-[#f9004d]">About</span> Me
+                </p>
+                <p
+                    class="text-white min-[1025px]:text-2xl sm:text-[14px] min-[1025px]:py-3 py-2 sm:text-left text-center font-semibold my-primary-font">
+                    Front-end Developer</p>
+                <p
+                    class="text-white min-[1025px]:text-base text-[12px] min-[1025px]:leading-[1.5rem] sm:text-left text-center sm:px-0 px-10">
+                    Front end development is the core field of computer science
+                    development that primarily focuses on
+                    coding and building what is visible, mainly in web apps or websites.</p>
+                <div class="flex justify-center sm:justify-start mt-4">
+                    <a href="contact.html"
+                        class="bg-[#f9004d] my-primary-font text-white px-10 py-[5px] rounded-xl border-2 border-[#f9004d] tracking-[2px] hover:bg-transparent ease-in duration-150">HIRE
+                        ME</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES Section  -->
+    <section class="container max-w-[1536px] mx-auto">
+        <div>
+            <div class="flex justify-center">
+                <p class="text-center inline-block xl:text-5xl sm:text-5xl text-4xl font-bold text-white md:py-4 sm:py-8 my-heading-font service-title">My SERVICES</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center my-6  wow animate__animated animate__slideInUp animate__slow 1s">
+                <div
+                    class="md:w-[280px] w-[350px] h-[400px] relative mx-6 rounded-[15px] service-card mt-12  tilt-class">
+                    <p class="text-9xl font-medium text-center absolute right-0 left-0 z-[-1] card-numbers ">01</p>
+                    <p class="text-center text-3xl font-bold text-[#f9004d] mt-16 tilt-class my-primary-font">Web <br> Development</p>
+                    <p class="text-center text-white text-sm px-2 pt-12">Every website should be built with two
+                        primary
+                        gaols Firstly, it needs to work across all devices Secondly, it needs to be fast as
+                        possible.
+                    </p>
+                    <div class="flex justify-center ">
+                        <a href="contact.html"
+                            class="bg-[#f9004d] my-primary-font px-8 py-2 rounded-full mt-5 text-white border-2 border-[#f9004d] hover:bg-transparent ease-in duration-150">READ MORE</a>
+                    </div>
+                </div>
+
+                <div
+                    class="md:w-[280px] w-[350px] h-[400px] relative mx-6 rounded-[15px] service-card mt-12  wow animate__animated animate__slideInUp">
+                    <p class="text-9xl font-medium text-center absolute right-0 left-0 z-[-1] card-numbers">02</p>
+                    <p class="text-center text-3xl font-bold text-[#f9004d] pt-16 my-primary-font">UI/UX <br> Designing</p>
+                    <p class="text-center text-white text-sm px-2 pt-12">We designs the user experience for a
+                        (digital)
+                        product. The focus on how users interact with and navigate a product .</p>
+                    <div class="flex justify-center">
+                        <a href="contact.html"
+                            class="bg-[#f9004d] px-8 py-2 rounded-full mt-5 text-white border-2 border-[#f9004d] hover:bg-transparent ease-in duration-150">READ MORE</a>
+                    </div>
+                </div>
+
+                <div
+                    class="md:w-[280px] w-[350px] h-[400px] relative mx-6 rounded-[15px] service-card my-12  wow animate__animated animate__slideInUp animate__slow 1s">
+                    <p class="text-9xl font-medium text-center absolute right-0 left-0 z-[-1] card-numbers">03</p>
+                    <p class="text-center text-3xl font-bold text-[#f9004d] pt-16 my-primary-font">Responsive <br> Design</p>
+                    <p class="text-center text-white text-sm px-2 pt-12">We'll build you a mobile Friendly designs
+                        according to Your requirments..</p>
+                    <div class="flex justify-center">
+                        <a href="contact.html"
+                            class="bg-[#f9004d] px-8 py-2 rounded-full mt-6 text-white border-2 border-[#f9004d] hover:bg-transparent ease-in duration-150">READ MORE</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Section  -->
+    <section class="bg-[#131313] my-20 sm:py-24 py-16">
+        <div class="mt-2">
+            <p class="text-center sm:text-3xl font-bold text-white my-heading-font">Let me Get You a Beautiful website.</p>
+        </div>
+        <div class="flex justify-center">
+            <button
+                class="bg-[#f9004d] my-primary-font sm:px-8 sm:py-2 px-4 py-[4px] rounded-lg border-2 border-[#f9004d] hover:bg-transparent text-white ease-in duration-150 my-6"><a
+                    target="_blank" href="https://assassins-creed-ubisoft.netlify.app/">CHECK OUT</a></button>
+        </div>
+    </section>
+
+    <!-- My footer  -->
+    <section class="">
+        <div class="">
+            <p class="text-center sm:text-3xl text-3xl text-white font-bold italic my-heading-font">ABDULLAH SURI</p>
+            <p class="text-center text-white font-semibold py-4 px-[9px] my-primary-font">This is my Portfolio Kindly check out my
+                project's
+                by
+                clicking this <a href="portfolio.html" class="text-[#f9004d] font-bold hover:underline">Take a Tour</a>
+            </p>
+            <div class="flex justify-center">
+                <div
+                    class="px-4 py-2 bg-[#f9004d] rounded-full mr-4 cursor-pointer hover:scale-125 ease-in duration-150">
+                    <a target="_blank" href="https://www.facebook.com/surisabdullahs656"><i
+                            class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                </div>
+                <div
+                    class="px-[14px] pt-2 bg-[#f9004d] rounded-full mr-4 cursor-pointer hover:scale-125 ease-in duration-150">
+                    <a target="_blank" href="https://www.instagram.com/m.abdullahsuri/"><i
+                            class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                </div>
+                <div
+                    class="px-[12px] pt-2 bg-[#f9004d] rounded-full mr-4 cursor-pointer hover:scale-125 ease-in duration-150">
+                    <a target="_blank" href="https://github.com/Abdullah-Suri"><i class="fa-brands fa-github"
+                            style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#131313] py-2 mt-24">
+            <p class="text-white text-center my-primary-font my-primary-font">Copyright by <span class="text-[#f9004d]">Abdullah
+                    Suri</span> </p>
+        </div>
+    </section>
+
+
+
+    <!-- wow  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- Js  -->
+    <script src="/Assets/js/script.js"></script>
+    <!-- Swippper Js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- vanilla-tilt -->
+    <script type="text/javascript" src="/Assets/js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".service-card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.4,
+
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
+    <!-- WoW Js  -->
+    <script>
+        new WOW().init()
+    </script>
+</body>
+
+</html>

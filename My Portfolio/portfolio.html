@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Style css -->
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="Assets/css/swiper-bundle.min.css">
+    <!-- Font Awsesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- WoW Js  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="/Assets/Images/fav-icon-removebg-preview.png" type="image">
+    <title>Abdullah - Personal Portfolio</title>
+</head>
+
+<body>
+    <!-- Nav Menu  -->
+    <nav class="max-[1024px]:hidden">
+        <div class="flex justify-between m-10 ">
+            <div class="flex items-center wow animate__animated animate__fadeIn animate__slow 2s">
+                <p class=" text-[#f9004d] my-arabic-font font-medium tracking-[3px] text-2xl xl:text-5xl cursor-pointer ease-in duration-300"><a
+                        href="/index.html">Abd<span class="text-white">ull</span>ah</p></a>
+                <!-- <img src="/Assets/images/abdullah-logo.png" alt=""> -->
+            </div>
+
+            <div class="flex items-center">
+                <ul class="">
+                    <li
+                        class="inline-block my-primary-font mr-12 text-white text-[14px] xl:text-lg font-medium tracking-[2px] cursor-pointer hover:text-[#f9004d] ease-in duration-300 wow animate__animated animate__jackInTheBox">
+                        <a href="/index.html"> HOME</a>
+                    </li>
+
+                    <li
+                        class="inline-block mr-12 my-primary-font text-white text-[14px] xl:text-lg font-medium tracking-[2px] cursor-pointer hover:text-[#f9004d] ease-in duration-300 wow animate__animated animate__jackInTheBox">
+                        <a href="/about.html">ABOUT</a>
+                    </li>
+
+                    <li
+                        class="inline-block mr-12 my-primary-font text-white text-[14px] xl:text-lg font-medium tracking-[2px] cursor-pointer hover:text-[#f9004d] ease-in duration-300 wow animate__animated animate__jackInTheBox">
+                        <a href="/portfolio.html">PORTFOLIO</a>
+                    </li>
+
+                    <li
+                        class="inline-block mr-12 my-primary-font text-white text-[14px] xl:text-lg font-medium tracking-[2px] cursor-pointer hover:text-[#f9004d] ease-in duration-300 wow animate__animated animate__jackInTheBox">
+                        <a href="/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="wow animate__animated animate__fadeIn animate__slow 2s">
+                <a href="contact.html"
+                    class="bg-transparent rounded-full my-primary-font text-white font-base tracking-[2px] text-white  py-2 px-8 border-[2px] border-[#f9004d] hover:bg-[#f9004d] ease-in duration-150 ">SUBSCRIBE</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu Hamburger -->
+    <section>
+        <div class="min-[1025px]:hidden flex justify-between items-center w-full my-4 sm:px-6 px-3">
+            <div class="flex items-center wow animate__animated animate__fadeIn animate__slow 2s">
+                <p class=" text-[#f9004d] my-arabic-font font-medium tracking-[3px] text-[42px] cursor-pointer ease-in duration-300"><a
+                        href="/index.html">Abd<span class="text-white">ull</span>ah</p></a>
+                <!-- <img src="/Assets/images/abdullah-logo.png" alt=""> -->
+            </div>
+            <span class="mob-menu" onclick="openNav()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                    <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z" fill="rgba(255,255,255,1)"></path>
+                </svg>
+            </span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="my-primary-font" href="index.html">HOME</a>
+            <a class="my-primary-font" href="about.html">ABOUT Me</a>
+            <a class="my-primary-font" href="portfolio.html">PORTFOLIO</a>
+            <a class="my-primary-font" href="contact.html">CONTACT Me</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section  -->
+    <section>
+        <div class="container max-w-[1280px] mx-auto">
+            <div class=" flex justify-center pt-10 pb-10">
+                <div class="mt-4 b-20">
+                    <p class="sm:text-6xl text-3xl text-white text-center font-bold pb-5 my-heading-font tracking-[5px]">MY <span
+                            class="text-[#f9004d]">PORTFOLIO</span></p>
+                    <p class="about-title text-[#b6b6b6] md:text-base text-[12px] px-2 text-center my-primary-font">A FEW RECENT DESIGN AND
+                        CODING PROJECTS. WANT TO SEE MORE? EMAIL ME.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-14 sm:py-0">
+        <div class="container mx-auto max-w-[1280px]">
+            <div class="swiper abcd mb-10 mx-3">
+                <div class="swiper-wrapper">
+
+                    <!-- Flip Card 01 -->
+                    <div
+                        class="flip-card swiper-slide cursor-pointer wow animate__animated animate__fadeIn animate__slow 2s">
+                        <a target="_blank" href="https://assassins-creed-ubisoft.netlify.app/
+                        ">
+                            <div class="flip-card-inner">
+                                <div class="flip-back">
+                                    <img src="/Assets/images/porto-samp-2.png"
+                                        class="w-full h-[200px] opacity-70 rounded-lg" alt="Avatar">
+                                </div>
+                                <div class="flip-front p-4">
+                                    <p
+                                        class="text-9xl font-medium text-center absolute top-[-12px] right-0 left-0 z-[-1] card-numbers">
+                                        01</p>
+                                    <p class="text-center text-3xl font-bold text-[#f9004d] p-8 my-heading-font">Assassin Creed</p>
+                                    <p class="text-center text-white text-sm px-2 pt-4 ">This Is my latest Landing Page, i cloned Ubisoft Assasins Creed Game Website Using Html Css And javascript have a look by clicking this Box</p>
+                                    <div class="lg:hidden flex justify-center ">
+                                        <button
+                                            class="bg-transparent  px-8 py-2 rounded-full mt-5 text-white border-2 border-[#f9004d] hover:bg-[#f9004d] ease-in duration-150">Read
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Flip Card 02 -->
+                    <div
+                        class="flip-card swiper-slide cursor-pointer wow animate__animated animate__fadeIn animate__slow 2s">
+                        <a target="_blank" href="https://zingy-cannoli-639982.netlify.app/">
+                            <div class="flip-card-inner">
+                                <div class="flip-back">
+                                    <img src="/Assets/images/myRapunzel.png"
+                                        class="w-full h-[200px] opacity-70 rounded-lg" alt="Avatar">
+                                </div>
+                                <div class="flip-front p-4">
+                                    <p
+                                        class="text-9xl font-medium text-center absolute top-[-12px] right-0 left-0 z-[-1] card-numbers">
+                                        02</p>
+                                    <p class="text-center text-3xl font-bold text-[#f9004d] p-8 my-heading-font">My Rapunzel</p>
+                                    <p class="text-center text-white text-sm px-2 pt-4 ">This Is my latest Landing Page, i cloned myRapunzel Website Using Html Css And javascript have a look by clicking this Box</p>
+                                    <div class="lg:hidden flex justify-center ">
+                                        <button
+                                            class="bg-transparent  px-8 py-2 rounded-full mt-5 text-white border-2 border-[#f9004d] hover:bg-[#f9004d] ease-in duration-150">Read
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Flip Card 03 -->
+                    <div
+                        class="flip-card swiper-slide cursor-pointer wow animate__animated animate__fadeIn animate__slow 2s">
+                        <a target="_blank" href="https://periodic-table-assignment.netlify.app/">
+                            <div class="flip-card-inner">
+                                <div class="flip-back">
+                                    <img src="/Assets/images/porto-sample-1.png"
+                                        class="w-full h-[200px] opacity-70 rounded-lg" alt="Avatar">
+                                </div>
+                                <div class="flip-front p-4">
+                                    <p
+                                        class="text-9xl font-medium text-center absolute top-[-12px] right-0 left-0 z-[-1] card-numbers">
+                                        03</p>
+                                    <p class="text-center text-3xl font-bold text-[#f9004d] p-8 my-heading-font">Periodic Table</p>
+                                    <p class="text-center text-white text-sm px-2 pt-4 ">This Is Periodic Table, i Made myself with my own creativity Using Html Css And javascript have a look by clicking this Box</p>
+                                    <div class="lg:hidden flex justify-center ">
+                                        <button
+                                            class="bg-transparent  px-8 py-2 rounded-full mt-5 text-white border-2 border-[#f9004d] hover:bg-[#f9004d] ease-in duration-150">Read
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Flip card 04 -->
+                    <div
+                        class="flip-card swiper-slide cursor-pointer wow animate__animated animate__fadeIn animate__slow 2s">
+                        <a target="_blank" href="https://musical-pithivier-12745c.netlify.app/">
+                            <div class="flip-card-inner">
+                                <div class="flip-back">
+                                    <img src="/Assets/images/illustration.png"
+                                        class="w-full h-[200px] opacity-70 rounded-lg" alt="Avatar">
+                                </div>
+                                <div class="flip-front p-4">
+                                    <p
+                                        class="text-9xl font-medium text-center absolute top-[-12px] right-0 left-0 z-[-1] card-numbers">
+                                        04</p>
+                                    <p class="text-center text-3xl font-bold text-[#f9004d] p-8 my-heading-font">illustration</p>
+                                    <p class="text-center text-white text-sm px-2 pt-4 ">This Is simple Landing Page Template, I cloned For Practice Work Using Html Css And javascript have a look by clicking this Box</p>
+                                    <div class="lg:hidden flex justify-center ">
+                                        <button
+                                            class="bg-transparent  px-8 py-2 rounded-full mt-5 text-white border-2 border-[#f9004d] hover:bg-[#f9004d] ease-in duration-150">Read
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Flip Card 05 -->
+                    <div
+                        class="flip-card swiper-slide cursor-pointer wow animate__animated animate__fadeIn animate__slow 2s">
+                        <a target="_blank" href="http://platypusdreaming.com.au/">
+                            <div class="flip-card-inner">
+                                <div class="flip-back">
+                                    <img src="/Assets/images/platypus.png" class="w-full h-[200px] opacity-70 rounded-lg"
+                                        alt="Avatar">
+                                </div>
+                                <div class="flip-front p-4">
+                                    <p
+                                        class="text-9xl font-medium text-center absolute top-[-12px] right-0 left-0 z-[-1] card-numbers">
+                                        05</p>
+                                    <p class="text-center text-3xl font-bold text-[#f9004d] p-8 my-heading-font">Platypus Dreaming</p>
+                                    <p class="text-center text-white text-sm px-2 pt-4 ">This Is my First E-commerce Site I created Using Wordpress- Elementor, have a look by clicking this Box</p>
+                                    <div class="lg:hidden flex justify-center ">
+                                        <button
+                                            class="bg-transparent  px-8 py-2 rounded-full mt-5 text-white border-2 border-[#f9004d] hover:bg-[#f9004d] ease-in duration-150">Read
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="xl:hidden swiper-button-next"></div>
+                <div class="xl:hidden swiper-button-prev"></div>
+            </div>
+
+
+            <!-- CARDS Without Slider  -->
+            <div class="max-[1024px]:hidden flex justify-center">
+
+                <div class="w-[33.333%] mr-8">
+                    <!-- Flip Card 03 -->
+                    <div
+                        class="flip-card swiper-slide cursor-pointer wow animate__animated animate__fadeIn animate__slow 2s">
+                        <a target="_blank" href="https://musical-pithivier-12745c.netlify.app/">
+                            <div class="flip-card-inner">
+                                <div class="flip-back">
+                                    <img src="/Assets/images/illustration.png"
+                                        class="w-full h-[200px] opacity-70 rounded-lg" alt="Avatar">
+                                </div>
+                                <div class="flip-front p-4">
+                                    <p
+                                        class="text-9xl font-medium text-center absolute top-[-12px] right-0 left-0 z-[-1] card-numbers">
+                                        04</p>
+                                    <p class="text-center text-3xl font-bold text-[#f9004d] p-8 my-heading-font">illustration</p>
+                                    <p class="text-center text-white text-sm px-2 pt-4 ">This Is simple Landing Page Template, I cloned For Practice Work Using Html Css And javascript have a look by clicking this Box</p>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-[33.333%] mr-8">
+                    <!-- Flip Card 04 -->
+                    <div
+                        class="flip-card swiper-slide cursor-pointer wow animate__animated animate__fadeIn animate__slow 2s">
+                        <a target="_blank" href="http://platypusdreaming.com.au/">
+                            <div class="flip-card-inner">
+                                <div class="flip-back">
+                                    <img src="/Assets/images/platypus.png" class="w-full h-[200px] opacity-70 rounded-lg"
+                                        alt="Avatar">
+                                </div>
+                                <div class="flip-front p-4">
+                                    <p
+                                        class="text-9xl font-medium text-center absolute top-[-12px] right-0 left-0 z-[-1] card-numbers">
+                                        05</p>
+                                    <p class="text-center text-3xl font-bold text-[#f9004d] p-8 my-heading-font">Platypus Dreaming</p>
+                                    <p class="text-center text-white text-sm px-2 pt-4 ">This Is my First E-commerce Site I created Using Wordpress- Elementor, have a look by clicking this Box</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Js  -->
+    <script src="/Assets/js/script.js"></script>
+    <!-- Swippper Js -->
+    <script src="Assets/js/swiper-bundle.min.js"></script>
+    <!-- vanilla-tilt -->
+    <script type="text/javascript" src="/Assets/js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".service-card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.4,
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".your-element"));
+
+        new Swiper(".abcd", {
+            slidesPerView: 2,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- WoW Js  -->
+    <script>
+        new WOW().init()
+    </script>
+</body>
+
+</html>

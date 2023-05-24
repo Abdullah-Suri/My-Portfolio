@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="/Assets/css/style.css">
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- Font Awsesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- WoW Js  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="/Assets/Images/fav-icon-removebg-preview.png" type="image">
+    <title>Abdullah - Personal Portfolio</title>
+</head>
+
+<body>
+    <!-- Nav Menu  -->
+    <nav class="max-[1024px]:hidden">
+        <div class="flex justify-between m-10 ">
+            <div class="flex items-center wow animate__animated animate__fadeIn animate__slow 2s">
+                <p
+                    class=" text-[#f9004d] my-arabic-font font-medium tracking-[3px] text-2xl xl:text-5xl cursor-pointer ease-in duration-300">
+                    <a href="/index.html">Abd<span class="text-white">ull</span>ah
+                </p></a>
+                <!-- <img src="/Assets/images/abdullah-logo.png" alt=""> -->
+            </div>
+
+            <div class="flex items-center">
+                <ul class="">
+                    <li
+                        class="inline-block my-primary-font mr-12 text-white text-[14px] xl:text-lg font-medium tracking-[2px] cursor-pointer hover:text-[#f9004d] ease-in duration-300 wow animate__animated animate__jackInTheBox">
+                        <a href="/index.html"> HOME</a>
+                    </li>
+
+                    <li
+                        class="inline-block mr-12 my-primary-font text-white text-[14px] xl:text-lg font-medium tracking-[2px] cursor-pointer hover:text-[#f9004d] ease-in duration-300 wow animate__animated animate__jackInTheBox">
+                        <a href="/about.html">ABOUT</a>
+                    </li>
+
+                    <li
+                        class="inline-block mr-12 my-primary-font text-white text-[14px] xl:text-lg font-medium tracking-[2px] cursor-pointer hover:text-[#f9004d] ease-in duration-300 wow animate__animated animate__jackInTheBox">
+                        <a href="/portfolio.html">PORTFOLIO</a>
+                    </li>
+
+                    <li
+                        class="inline-block mr-12 my-primary-font text-white text-[14px] xl:text-lg font-medium tracking-[2px] cursor-pointer hover:text-[#f9004d] ease-in duration-300 wow animate__animated animate__jackInTheBox">
+                        <a href="/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="wow animate__animated animate__fadeIn animate__slow 2s">
+                <a href="contact.html"
+                    class="bg-transparent rounded-full my-primary-font text-white font-base tracking-[2px] text-white  py-2 px-8 border-[2px] border-[#f9004d] hover:bg-[#f9004d] ease-in duration-150 ">SUBSCRIBE</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu Hamburger -->
+    <section>
+        <div class="min-[1025px]:hidden flex justify-between items-center w-full my-4 sm:px-6 px-3">
+            <div class="flex items-center wow animate__animated animate__fadeIn animate__slow 2s">
+                <p
+                    class=" text-[#f9004d] my-arabic-font font-medium tracking-[3px] text-[42px] cursor-pointer ease-in duration-300">
+                    <a href="/index.html">Abd<span class="text-white">ull</span>ah
+                </p></a>
+                <!-- <img src="/Assets/images/abdullah-logo.png" alt=""> -->
+            </div>
+            <span class="mob-menu" onclick="openNav()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                    <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z" fill="rgba(255,255,255,1)"></path>
+                </svg>
+            </span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="my-primary-font" href="index.html">HOME</a>
+            <a class="my-primary-font" href="about.html">ABOUT Me</a>
+            <a class="my-primary-font" href="portfolio.html">PORTFOLIO</a>
+            <a class="my-primary-font" href="contact.html">CONTACT Me</a>
+        </div>
+    </section>
+
+    <!-- About Hero  -->
+    <section>
+        <div class=" flex justify-center pt-10 pb-10">
+            <div>
+                <p class="sm:text-7xl text-4xl text-white text-center font-semibold pb-5 my-heading-font">ABOUT <span
+                        class="text-[#f9004d]">ME</span></p>
+                <p class="about-title my-primary-font text-[#b6b6b6] sm:text-base text-[10px] text-center">I DESIGN AND
+                    CODE BEAUTIFUL
+                    THINGS, AND I LOVE WHAT I
+                    DO.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div
+            class="container max-w-[1280px] mx-auto sm:px-10 px-4 grid grid-cols-12 items-center wow animate__animated animate__fadeIn animate__slow 2s">
+            <div
+                class="min-[1025px]:col-span-4 col-span-12 min-[1025px]:w-full sm:w-[40%] sm:justify-self-center img-container sm:mx-12 ease-in duration-300 ">
+                <img src="/Assets/images/abcde.jpeg" class="w-full h-full object-cover opacity-90" alt="">
+            </div>
+
+            <div
+                class="min-[1025px]:col-span-4 sm:col-span-6 col-span-12 sm:justify-self-end min-[1025px]:pr-16 mt-14 sm:ml-12 my-primary-font">
+                <p class="text-[#b5b5b5] xl:text-[19px]">First Name : <span class="pl-2 text-white">Abullah</span></p>
+                <p class="text-[#b5b5b5] xl:text-[19px] py-4">Last Name : <span class="pl-2 text-white">Suri</span></p>
+                <p class="text-[#b5b5b5] xl:text-[19px]">Birthdate : <span class="pl-2 text-white">06 Aug 2004</span>
+                </p>
+                <p class="text-[#b5b5b5] xl:text-[19px] py-4">Nationality : <span
+                        class="pl-2 text-white">Pakistani</span></p>
+                <p class="text-[#b5b5b5] xl:text-[19px]">Experience : <span class="pl-2 text-white">1 Year</span></p>
+                <div class="pt-12 max-[1024px]:hidden">
+                    <button
+                        class="bg-transparent flex items-center xl:px-6 px-4 py-2 rounded-full border-2 border-[#f9004d] text-white xl:text-base text-[13px] hover:bg-[#f9004d] ease-in-out duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M3 19H21V21H3V19ZM13 9H20L12 17L4 9H11V1H13V9Z" fill="rgba(255,255,255,1)"></path>
+                        </svg>
+                        DOWNLOAD MY CV</button>
+                </div>
+            </div>
+            <div
+                class="min-[1024px]:pb-[93px] min-[1025px]:col-span-4 sm:col-span-6 col-span-12 sm:mt-14 mt-4 sm:pl-10 my-primary-font">
+                <p class="text-[#b5b5b5] xl:text-[19px]">Freelance : <span class="pl-2 text-white">Available</span></p>
+                <p class="text-[#b5b5b5] xl:text-[19px] py-4">Language : <span class="pl-2 text-white">English</span>
+                </p>
+                <p class="text-[#b5b5b5] xl:text-[19px]">Phone : <span class="pl-2 text-white">+92 3308110696</span></p>
+                <p class="text-[#b5b5b5] xl:text-[19px] py-4">Email : <span
+                        class="pl-2 text-white">m.abdullahsuri@gmail.com</span></p>
+                <p class="text-[#b5b5b5] xl:text-[19px]">Github : <span class="pl-2 text-white"><a
+                            href="https://github.com/Abdullah-Suri">Abdullah-Suri</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Education -->
+    <section class="bg-[#131313] py-10 sm:my-32 my-14">
+        <div class="container max-w-[1280px] mx-auto md:flex ">
+            <!-- Education Box  -->
+            <div class="mx-10 wow animate__animated animate__slideInUp">
+                <p class="text-white text-3xl font-semibold mb-12 my-heading-font tracking-[5px]">EDUCATION</p>
+                <div class="exp-items pb-12 my-primary-font">
+                    <span class="bullet"></span>
+                    <div class="main-card ml-6">
+                        <span class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"
+                                    fill="#a4a4a4"></path>
+                            </svg>
+                            <p class="text-[#a4a4a4] pl-2">2011 - 2020</p>
+                        </span>
+                        <p class="text-white lg:text-[18px] text-[14px] font-semibold tracking-[1px] py-4">MATRIC - St.
+                            LAWRENCE GRAMMAR SCHOOL</p>
+                        <p class="text-[#a4a4a4]">Passed Matric From St. lawrence Grammar School With A+ Grade</p>
+                    </div>
+                </div>
+
+                <div class="exp-items pb-12">
+                    <span class="bullet"></span>
+                    <div class="main-card ml-6">
+                        <span class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"
+                                    fill="#a4a4a4"></path>
+                            </svg>
+                            <p class="text-[#a4a4a4] pl-2">2021 - 2022</p>
+                        </span>
+                        <p class="text-white lg:text-[18px] text-[14px] font-semibold tracking-[1px] py-4">INTER -
+                            ISLAMIA GOV. SCIENCE COLLEGE</p>
+                        <p class="text-[#a4a4a4]">Passed Inter From Gov. Islamia Science College With good Percentage
+                        </p>
+                    </div>
+                    <span class="close-bullet"></span>
+                </div>
+            </div>
+
+            <!-- Experience Box  -->
+            <div class="mx-11 md:pt-0 pt-14 wow animate__animated animate__slideInUp">
+                <p class="text-white text-3xl font-semibold mb-12 my-heading-font tracking-[5px]">EXPERIENCE</p>
+                <div class="exp-items pb-12 my-primary-font">
+                    <span class="bullet"></span>
+                    <div class="main-card ml-6">
+                        <span class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"
+                                    fill="#a4a4a4"></path>
+                            </svg>
+                            <p class="text-[#a4a4a4] pl-2">2023 - PRESENT</p>
+                        </span>
+                        <p class="text-white lg:text-[18px] text-[14px] font-semibold tracking-[1px] py-4">FRONT-END
+                            DEVELOPER - TEKSYO PVT LTD.</p>
+                        <p class="text-[#a4a4a4]">Working At Teksyo As a Front-end Developer since 2023 to Present </p>
+                    </div>
+                    <span class="close-bullet"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section  -->
+    <section>
+        <div class="container max-w-[1280px] mx-auto">
+            <div>
+                <p class="text-white text-3xl font-semibold pb-16 mx-5 my-heading-font tracking-[3px]">SKILLS</p>
+            </div>
+            <div class="flex flex-wrap mx-5 wow animate__animated animate__fadeInLeft">
+                <div class="md:w-2/6 min-[575px]w-[50%] w-full min-[768px]:pr-10 md:mb-10">
+                    <p class="text-white text-[18px] my-primary-font tracking-[2px] pb-2">HTML</p>
+                    <div class="main-bar">
+                        <span class="progress-bar"></span>
+                        <span class="num-percent">85%</span>
+                    </div>
+                </div>
+
+                <div
+                    class="md:w-2/6 min-[575px]w-[50%] w-full min-[768px]:pr-10 wow animate__animated animate__fadeInLeft">
+                    <p class="text-white text-[18px] my-primary-font tracking-[2px] pb-2">CSS</p>
+                    <div class="main-bar">
+                        <span class="progress-bar-css"></span>
+                        <span class="num-percent">70%</span>
+                    </div>
+                </div>
+
+                <div
+                    class="md:w-2/6 min-[575px]w-[50%] w-full md:pr-0 min-[768px]:pr-10 wow animate__animated animate__fadeInLeft">
+                    <p class="text-white text-[18px] my-primary-font tracking-[2px] pb-2">Javascript</p>
+                    <div class="main-bar">
+                        <span class="progress-bar-js"></span>
+                        <span class="num-percent">25%</span>
+                    </div>
+                </div>
+
+                <div
+                    class="md:w-2/6 min-[575px]w-[50%] w-full min-[768px]:pr-10 wow animate__animated animate__fadeInLeft">
+                    <p class="text-white text-[18px] my-primary-font tracking-[2px] pb-2">Tailwind Css</p>
+                    <div class="main-bar">
+                        <span class="progress-bar-css"></span>
+                        <span class="num-percent">75%</span>
+                    </div>
+                </div>
+
+                <div
+                    class="md:w-2/6 min-[575px]w-[50%] w-full min-[768px]:pr-10 wow animate__animated animate__fadeInLeft">
+                    <p class="text-white text-[18px] my-primary-font tracking-[2px] pb-2">Wordpress</p>
+                    <div class="main-bar">
+                        <span class="progress-bar-wp"></span>
+                        <span class="num-percent">50%</span>
+                    </div>
+                </div>
+
+                <div
+                    class="md:w-2/6 min-[575px]w-[50%] w-full min-[768px]:pr-10 wow animate__animated animate__fadeInLeft">
+                    <p class="text-white text-[18px] my-primary-font tracking-[2px] pb-2">Bootstrap</p>
+                    <div class="main-bar">
+                        <span class="progress-bar-css"></span>
+                        <span class="num-percent">70%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- wow  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Js  -->
+    <script src="/Assets/js/script.js"></script>
+    <!-- Swippper Js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- vanilla-tilt -->
+    <script type="text/javascript" src="/Assets/js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".service-card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.4,
+        });
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
+
+    <!-- WoW Js  -->
+    <script>
+        new WOW().init()
+    </script>
+</body>
+
+</html>
